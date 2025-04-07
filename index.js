@@ -1,8 +1,7 @@
+import 'react-native-gesture-handler'; // İlk sırada
 import { registerRootComponent } from 'expo';
-import 'react-native-gesture-handler';
+import React from 'react';
+import App from './src/App';
+import { name as appName } from './app.json';
 
-import Router from './src/Router';
-import {name as appName} from './app.json';
-
-
-export default registerRootComponent(Router);
+export default registerRootComponent(App);
