@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addFavorite } from '../../redux/favouriteSlice';
 import RenderHtml from 'react-native-render-html';
 import { useWindowDimensions } from 'react-native';
+import styles from "./JobsDetail.style";
 
 const JobsDetail = ({ route }) => {
   const { jobId } = route.params;

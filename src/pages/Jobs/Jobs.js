@@ -2,6 +2,8 @@ import React from 'react';
 import { View, Text, FlatList, TouchableOpacity, ActivityIndicator, StyleSheet } from 'react-native';
 import useFetch from '../../hooks/useFetch/useFetch';
 import { useNavigation } from '@react-navigation/native';
+import styles from "./Jobs.style";
+
 
 const Jobs = () => {
   const { data, loading } = useFetch();
@@ -30,17 +32,17 @@ const Jobs = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  card: {
-    backgroundColor: '#fff',
-    padding: 16,
-    margin: 8,
-    borderRadius: 8,
-    elevation: 2,
-  },
-  title: { fontSize: 18, fontWeight: 'bold' },
-  location: { color: '#e53935' },
-  level: { color: '#e53935', fontWeight: 'bold' }
-});
+// const styles = StyleSheet.create({
+//   card: {
+//     backgroundColor: '#fff',
+//     padding: 16,
+//     margin: 8,
+//     borderRadius: 8,
+//     elevation: 2,
+//   },
+//   title: { fontSize: 18, fontWeight: 'bold' },
+//   location: { color: '#e53935' },
+//   level: { color: '#e53935', fontWeight: 'bold' }
+// });
 
 export default Jobs;
